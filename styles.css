@@ -130,7 +130,7 @@ header.scrolled {
     align-items: center;
     position: relative;
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), 
-                url('C:/Users/devan/Pictures/site/suite-3-viola.png');
+                url('./assets/suite-3-viola.png');
     background-size: cover;
     background-position: center 30%;
     background-attachment: fixed;
