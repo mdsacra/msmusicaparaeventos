@@ -3,38 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matheus Sacramento | Música para Eventos</title>
+    <title>Matheus Sacramento — Violista & Violinista para Casamentos e Eventos | Florianópolis, SC</title>
     <meta name="description" content="Violinista e violista profissional para eventos. Música clássica e popular para casamentos, corporativos e ocasiões especiais. Excelência musical e sofisticação.">
     <meta name="keywords" content="violista, violinista, violino, música clássica, evento luxo, casamento, música ao vivo, artista, música para eventos, violista profissional, violinista profissional, música para casamento">
     <meta name="author" content="Matheus Sacramento">
     <meta property="og:title" content="Matheus Sacramento | Música para Eventos - Violino e Viola">
     <meta property="og:description" content="Violinista e violista profissional para eventos. Exclusividade e sofisticação.">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/matheus-viola.png">
+    <meta property="og:image:alt" content="Matheus Sacramento com violino/viola">
     <link rel="icon" href="./assets/logo.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+        "@type": "Person",
+        "@id": "https://example.com/#matheus",
+        "name": "Matheus Sacramento",
+        "alternateName": "MS - Música para Eventos",
+        "description": "Violista e violinista profissional para casamentos e eventos corporativos em Florianópolis/SC e região. Repertório clássico e popular.",
+        "image": "https://example.com/assets/profile.jpg",
+        "url": "https://example.com/",
+        "jobTitle": ["Violista Profissional", "Violinista Profissional", "Músico para Eventos"],
+        "knowsAbout": [
+            "Música Clássica",
+            "Música Contemporânea",
+            "Música Popular"
+            "Violino",
+            "Viola",
+            "Música para Casamentos",
+            "Eventos Corporativos"
+        ],
+        "sameAs": [
+            "https://www.instagram.com/SEU_INSTAGRAM",
+            "https://www.youtube.com/SEU_CANAL",
+            "https://wa.me/5553999814571"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Florianópolis",
+            "addressRegion": "Santa Catarina",
+            "addressCountry": "BR"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+55-53-99981-4571",
+            "contactType": "reservations",
+            "email": "mdsacra@gmail.com",
+            "areaServed": ["BR", "BR-SC"],
+            "availableLanguage": ["Portuguese", "English"]
+        },
+        "makesOffer": [
+            {
+            "@type": "Offer",
+            "name": "Música para Casamentos",
+            "description": "Performance musical completa para cerimônia e recepção de casamento"
+            },
+                        {
+            "@type": "Offer",
+            "name": "Música para Formaturas",
+            "description": "Performance musical completa para cerimônia e recepção de formatura"
+            },
+            {
+            "@type": "Offer",
+            "name": "Eventos Sociais",
+            "description": "Ambientação musical para vernissages, premiações e celebrações privadas"
+            },
+            {
+            "@type": "Offer",
+            "name": "Eventos Corporativos",
+            "description": "Ambientação musical para coquetéis, jantares e eventos empresariais"
+            }
+        ],
+        "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Músico Profissional",
+            "description": "Atuação como violista e violinista em eventos sociais, corporativos e casamentos com repertório clássico e popular."
+        }
+        },
+        {
+        "@type": "WebSite",
+        "@id": "https://msmusicaparaeventos.vercel.app",
+        "name": "MS - Música para Eventos",
+        "description": "Violista e violinista profissional para eventos em Florianópolis/SC",
+        "publisher": {
+            "@id": "https://msmusicaparaeventos.vercel.app"
+        }
+        }
+    ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header e Navegação -->
     <header>
         <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="./assets/logo.png" alt="MS - Música para Eventos" width="100" />
+            <a href="/" class="logo" aria-label="Página inicial - Matheus Sacramento">
+                <img src="./assets/logo.png" alt="Logo Matheus Sacramento - música para eventos" width="100" loading="eager">
             </a>
             
-            <button class="mobile-menu-btn">
+            <button class="mobile-menu-btn" aria-label="abrir menu">
                 <i class="fas fa-bars"></i>
             </button>
-            <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#curriculum">Currículo</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#contact">Contato</a></li>
-            </ul>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-links">
+                 <li><a href="#home">Início</a></li>
+                 <li><a href="#about">Sobre</a></li>
+                 <li><a href="#curriculum">Currículo</a></li>
+                 <li><a href="#gallery">Galeria</a></li>
+                 <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     
@@ -51,23 +137,24 @@
         </ul>
     </div>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1><span>Matheus Sacramento</span></h1>
-            <h1>Música para eventos</h1>
+            <h1>Matheus Sacramento</h1>
+            <h2>Música para eventos</h2>
             <p>A exclusividade que você merece.<br/>O registro que seu evento precisa.</p>
             <a href="#contact" class="cta-button">Reservar para Evento</a>
         </div>
     </section>
-
+ 
     <!-- Sobre o Artista -->
     <section class="about" id="about">
         <div class="container">
             <h2 class="section-title">Sobre o Artista</h2>
             <div class="about-container">
                 <div class="about-image">
-                    <img src="./assets/matheus-viola.png" alt="Matheus Sacramento">
+                    <img src="./assets/matheus-viola.png" alt="Matheus Sacramento com violino/viola" loading="lazy" width="800">
                 </div>
                 <div class="about-content">
                     <h3>Excelência Musical e Sofisticação</h3>
@@ -141,13 +228,13 @@
             <h2 class="section-title">Galeria</h2>
             <div class="gallery-container">
                 <div class="gallery-item">
-                    <img src="./assets/matheus-ossca.jpg" alt="Concerto com a Orquestra Sinfônica de Santa Catarina">
+                    <img src="./assets/matheus-ossca.jpg" alt="Concerto com a Orquestra Sinfônica de Santa Catarina" loading="lazy" width="1200" height="800">
                 </div>
                 <div class="gallery-item">
-                    <img src="./assets/matheus-evento-corporativo.png" alt="Evento corporativo com o quarteto de cordas da Sociedade Pelotense Música Pela Música">
+                    <img src="./assets/matheus-evento-corporativo.png" alt="Evento corporativo com quarteto de cordas" loading="lazy" width="1200" height="800">
                 </div>
                 <div class="gallery-item">
-                    <img src="./assets/matheus-spmm.jpg" alt="Concerto com a Orquestra Filarmônica da Sociedade Pelotense Música Pela Música">
+                    <img src="./assets/matheus-spmm.jpg" alt="Concerto com a Orquestra Filarmônica SPMM" loading="lazy" width="1200" height="800">
                 </div>
             </div>
         </div>
@@ -227,6 +314,7 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer>

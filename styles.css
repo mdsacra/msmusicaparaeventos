@@ -145,6 +145,13 @@ header.scrolled {
 
 .hero h1 {
     font-size: 4rem;
+    margin-bottom: 8px;
+    color: var(--primary-gold);
+    line-height: 1.1;
+}
+
+.hero h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
     color: var(--text-dark);
     line-height: 1.1;
