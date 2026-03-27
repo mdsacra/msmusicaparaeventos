@@ -59,7 +59,7 @@ if (whatsappButton) {
                                `Aguardo seu retorno!`;
 
         // Número de WhatsApp (substitua pelo número real)
-        const whatsappNumber = "5553999814571";
+        const whatsappNumber = "5548999598366";
         
         // Abrir WhatsApp
         window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
